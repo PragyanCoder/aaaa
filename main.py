@@ -72,7 +72,7 @@ def monitor_spaces():
 # Function to send space status updates to Telegram
 def send_telegram_update():
     status_summary = "\n".join([f"{space['name']} - Status: {space_statuses[space['url']]}" for space in spaces])
-    message = f"🛰️ *Space Status Update*\n\n{status_summary}"
+    message = f"🛰️ *Space Status Update*\n\n{status_summary}\n\nMaster @Pragyan"
     send_telegram_message(message)
 
 # Function to send startup message to Telegram
